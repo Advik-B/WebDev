@@ -1,0 +1,141 @@
+* {
+
+  background-color: rgb(39, 41, 46);
+  color: wheat;
+  font-family: "JetBrains Mono";
+  /* font-weight: bold; */
+  border: #ccc;
+
+}
+
+
+body {
+    margin-top:  1%;
+    margin-left: 1%;
+    }
+
+h1 {
+  color: rgb(0, 200, 250);
+  font-size: 4rem;
+      
+}
+    
+h2 {
+  
+  color: rgb(0, 200, 200);
+  font-size: 3.5rem;
+
+}
+    
+h3 {
+  
+  color: rgb(0, 200, 150);
+  font-size: 3rem;
+
+}
+    
+h4 {
+  
+  color: rgb(0, 200, 100);
+  font-size: 2.5rem;
+
+}
+
+h5 {
+  
+  font-size: 2rem;
+  color: rgb(0, 200, 50);
+
+}
+
+h6 {
+  
+  font-size: 1.5rem;
+  color: rgb(0, 200, 0);
+      
+}
+
+
+    
+p {
+
+  font-size: 1.2rem;
+
+}
+
+
+.center {
+
+  text-align: center;
+      
+}
+
+
+.rainbow {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+button, input[type=submit] {
+  background-color: rgb(0, 200, 250);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+  border-radius: 5px;
+  font-size: 16px;
+
+}
+
+input {
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+table {
+
+  background-color: rgb(0, 170, 220);
+  opacity: 100%;
+
+}
+
+hr {
+  border: 1px solid rgb(0, 170, 220);
+  opacity: 100%;
+}
+
+a {
+  color: rgb(0, 154, 250);
+  text-decoration: none;
+  text-decoration-color: rgb(171, 250, 0);
+  height: 2rem;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgb(0, 10, 16);
+}
+
+a:hover {
+  color: rgb(0, 154, 250);
+  /* text-decoration: none; */
+  text-decoration-color: rgb(171, 250, 0);
+  height: 2rem;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgb(0, 10, 16);
+}
