@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+<script defer src="pyscript/pyscript.js"></script>
+<!-- <link rel="stylesheet" href="pyscript/pyscript.css"> -->
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <h1>Cryptographer</h1>
+    <p>
+        This is a simple encryption/decryption tool.
+    </p>
+    <p>You can use it to encrypt/decrypt any file/string</p>
+
+    <!-- <textarea
+    name="input_text"
+    id="it"
+    placeholder="Enter text to encrypt"
+    spellcheck="false"
+    required="true"
+
+    ></textarea> -->
+    <input type="radio" name="mode" id="enc_mode" checked="true"> Encrypt
+    <input type="radio" name="mode" id="dec_mode"> Decrypt
+    <p></p>
+    <textarea id="str" placeholder="Enter text to encrypt" spellcheck="false" required="true"></textarea>
+    <input type="text"id="key" placeholder="Enter the encryption key" required="true">
+    
+    <button type="submit" class="button" id="submit_btn" onclick="">
+        Encrypt!
+    </button>
+    <hr>
+    <input type="text" id="out_str" placeholder="The encrypted message will be displayed here" readonly="true">
+
+<py-env>
+- cryptography
+</py-env>
+<py-script src="cryptographer.py"></py-script>
+</body>
+</html>
