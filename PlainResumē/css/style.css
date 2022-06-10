@@ -1,7 +1,7 @@
 * {
 
     background-color: rgb(39, 41, 46);
-    color: rgb(255, 255, 255);
+    color: #ccc;
     font-family: "JetBrains Mono";
     /* font-weight: bold; */
     border: #ccc;
@@ -66,6 +66,18 @@ h6 {
   .rainbow {
     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
   }
+
+.button {
+  background-color: #00c8c8;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 69%;
+  border-radius: 5px;
+  font-size: 16px;
+}
   
   button, input[type=submit] {
     background-color: rgb(0, 200, 250);
@@ -89,6 +101,7 @@ h6 {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    width: 69%;
   }
   
   textarea {
@@ -100,6 +113,7 @@ h6 {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    width: 69%;
   }
   
   table {
@@ -149,4 +163,14 @@ table, th, td {
 tr:hover {
     background-color: rgb(175, 255, 255);
     opacity: 100%;
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
 }
