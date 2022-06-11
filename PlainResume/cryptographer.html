@@ -11,9 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 
 <script defer src="pyscript/pyscript.js"></script>
-<link rel="stylesheet" href="pyscript/pyscript.css">
+<!-- <link rel="stylesheet" href="pyscript/pyscript.css"> -->
 <link rel="stylesheet" href="css/style.css">
 <body>
+<py-env>
+- cryptography
+</py-env>
+<py-script src="cryptographer.py"></py-script>
     <h1>Cryptographer</h1>
     <p>
         This is a simple encryption/decryption tool.
@@ -37,15 +41,11 @@
     <input type="text"id="key" placeholder="Enter the encryption key" required="true">
     <p></p>
     
-    <button type="submit" class="button" id="submit_btn" onclick="">
+    <button type="submit" class="button" id="submit_btn">
         Encrypt!
     </button>
-    <hr>
-    <input type="text" id="out_str" placeholder="The encrypted message will be displayed here" readonly="true">
-
-<py-env>
-- cryptography
-</py-env>
-<py-script src="cryptographer.py"></py-script>
+    <!-- <hr> -->
+    <input type="text" id="out" placeholder="The encrypted message will be displayed here" readonly="true">
+    <p></p>
 </body>
 </html>
