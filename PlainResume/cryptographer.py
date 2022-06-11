@@ -1,9 +1,14 @@
 from cryptography.fernet import Fernet
 from pyodide import create_proxy
+import sys
 
 from js import alert, document
 
+def p(*s: str):
+    for i in s:
+        sys.stdout.write(i)
 
+# EPB-y60D3qJaBI1n0cShTNy2-CwwzMdb69lhuf8Dm0I=
 def generate_key():
     key = Fernet.generate_key()
     return key.decode('utf-8')
@@ -18,18 +23,20 @@ input_key = Element("key")
 
 enc_mode = document.getElementById("enc_mode")
 dec_mode = document.getElementById("dec_mode")
-out = document.getElementById("out_str")
+out = document.getElementById("out")
 
 inp_out = document.getElementById("str")
 inp_out_key = document.getElementById("key")
 
 def set_mode_enc(mode):
-    print("Encrypting")
+    sys.stdout.write("Encrypting")
 
 def set_mode_dec(mode):
-    print("Decrypting")
+    sys.stdout.write("Decrypting")
 
 def payload(ao):
+    global out
+    p('Sending payload')
     key = input_key.value
     message = input_message.value
     if key == "":
@@ -40,15 +47,16 @@ def payload(ao):
         return
     try:
         encrypted = encrypt(key, message)
-
         out.readonly = False
         out.innerHTML = encrypted.decode('utf-8')
         out.readonly = True
+        p(out.innerHTML)
     except ValueError as e:
         alert("Invalid encryption key: " + str(e))
     except Exception as e:
         alert("Error: " + str(e))
-
+    p('Payload sent')
+    # p(*out.__dir__())
 function_proxy = create_proxy(payload)
 
 document.getElementById("submit_btn").addEventListener("click", function_proxy)
