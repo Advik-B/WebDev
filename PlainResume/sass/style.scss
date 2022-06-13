@@ -126,19 +126,14 @@ h6 {
   a {
     color: $link_color;
     text-decoration: none;
-    text-decoration-color: rgb(171, 250, 0);
-    height: 2rrem;
-    font-size: 1.2rrem;
+    height: 2rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px rgb(0, 10, 16);
   }
   
   a:hover {
-    color: $link_color;
-    /* text-decoration: none; */
-    text-decoration-color: rgb(171, 250, 0);
-    height: 2rrem;
-    font-size: 1.2rrem;
-    text-shadow: 1px 1px 1px rgb(0, 10, 16);
+    color: $aqua;
+    font-size: 1.2rem;
   }
 
 table, th, td {
